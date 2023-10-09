@@ -20,8 +20,8 @@ p_seed = params["seed"]
 p_max_depth = params["max_depth"]
 
 df = pd.read_csv(f_input)
-X = df.iloc[:,[0,1,2,4]]
-y = df.iloc[:,3]
+X = df.iloc[:,[1,2,3,4]]
+y = df.iloc[:,0]
 
 clf = DecisionTreeRegressor(max_depth=p_max_depth, random_state=p_seed)
 clf.fit(X, y)
