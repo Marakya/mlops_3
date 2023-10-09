@@ -26,8 +26,8 @@ stages:
       size: 486988
     - path: scripts/data_processing/fill_na.py
       hash: md5
-      md5: 69245d5a23e670beed627af22e403a7e
-      size: 1447
+      md5: 783f67c1bd7a7bbebbd9fc80cf55c1e0
+      size: 1449
     outs:
     - path: datasets/stage2
       hash: md5
