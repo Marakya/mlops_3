@@ -23,7 +23,7 @@ p_split_ratio = params["split_ratio"]
 df = pd.read_csv(f_input)
 X = df.iloc[:,[0,1,2,4]]
 y = df.iloc[:,3]
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=p_split_ratio, stratify=y)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=p_split_ratio)
 
 pd.concat([y_train, X_train], axis=1).to_csv(f_output_train, header=None, index=None)
 pd.concat([y_test, X_test], axis=1).to_csv(f_output_test, header=None, index=None)
