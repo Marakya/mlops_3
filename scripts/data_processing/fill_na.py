@@ -36,7 +36,7 @@ def process_data(fd_in, fd_out):
             arr_housing_age[i] = round(s / len(housing_age), 3)
 
     for p_housing_age, p_total_rooms, p_income, p_house_value, p_ocean_proximity  in zip(arr_housing_age, arr_total_rooms, arr_income, arr_house_value, arr_ocean_proximity):
-        fd_out.write("{},{},{},{}\n".format(p_housing_age, p_total_rooms, p_income, p_house_value, p_ocean_proximity))
+        fd_out.write("{},{},{},{},{}\n".format(p_housing_age, p_total_rooms, p_income, p_house_value, p_ocean_proximity))
 
 
 with io.open(f_input, encoding="utf8") as fd_in:

@@ -21,7 +21,7 @@ def process_data(fd_in, fd_out):
         p_house_value = line[8]
         p_ocean_proximity = line[9]
 
-        fd_out.write("{},{},{},{}\n".format(p_housing_age, p_total_rooms, p_income, p_house_value, p_ocean_proximity))
+        fd_out.write("{},{},{},{},{}\n".format(p_housing_age, p_total_rooms, p_income, p_house_value, p_ocean_proximity))
 
 with io.open(f_input, encoding="utf8") as fd_in:
     with io.open(f_output, "w", encoding="utf8") as fd_out:
