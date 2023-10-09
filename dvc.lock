@@ -9,13 +9,13 @@ stages:
       size: 1203644
     - path: scripts/data_processing/get_features.py
       hash: md5
-      md5: 5a06a96c02e1f96fa8beadd34ceb614c
-      size: 877
+      md5: b827d45153e3821632363fd5aadd1b6c
+      size: 878
     outs:
     - path: datasets/stage1
       hash: md5
-      md5: 333bbe2a7d3571cad3cfd5fd8c0b7e7b.dir
-      size: 486988
+      md5: c5c02a808c4b1bfc08a17fc5ccb46c46.dir
+      size: 546387
       nfiles: 1
   fill-na:
     cmd: python3 scripts/data_processing/fill_na.py datasets/stage1/train.csv

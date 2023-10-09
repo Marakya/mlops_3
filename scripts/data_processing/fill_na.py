@@ -33,7 +33,7 @@ def process_data(fd_in, fd_out):
 
     for i in range(len(arr_housing_age)):
         if arr_housing_age[i] == 0:
-            arr_housing_age[i] = round(s / len(housing_age), 3)
+            arr_housing_age[i] = round(s / len(arr_housing_age), 3)
 
     for p_housing_age, p_total_rooms, p_income, p_house_value, p_ocean_proximity  in zip(arr_housing_age, arr_total_rooms, arr_income, arr_house_value, arr_ocean_proximity):
         fd_out.write("{},{},{},{},{}\n".format(p_housing_age, p_total_rooms, p_income, p_house_value, p_ocean_proximity))
