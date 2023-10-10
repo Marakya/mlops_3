@@ -20,12 +20,46 @@
 
 ![Снимок экрана от 2023-10-08 16-14-19](https://github.com/Marakya/mlops_3/assets/113238801/54567f82-c71d-4e73-9ad0-dd9e5ac0876f)
 
+![Снимок экрана от 2023-10-08 16-42-09](https://github.com/Marakya/mlops_3/assets/113238801/8bf3cb3c-faa3-4349-b72e-d6d543de2e2b)
 
-Данные взяты с kaggle - [Housing Price & Real Estate - 2023](https://www.kaggle.com/datasets/reenapinto/housing-price-and-real-estate-2023)
 
+Данные взяты с kaggle - Housing Price & Real Estate - 2023
+https://www.kaggle.com/datasets/reenapinto/housing-price-and-real-estate-2023
 
 Написаны три скрипта для обработки данных:
 
 - get_features.py
 - fill_na.py
 - change_text_to_numeric.py
+
+## Создание этапов (stage) и объединение их в единый конвейер 
+
+![Снимок экрана от 2023-10-09 14-58-07](https://github.com/Marakya/mlops_3/assets/113238801/17fa2af5-14f0-41ae-8530-de7e5bdf0eb9)
+
+![Снимок экрана от 2023-10-09 16-39-37](https://github.com/Marakya/mlops_3/assets/113238801/6e3ab7ad-f64a-4233-a969-ac4eb8161720)
+
+Создание конвейера:
+
+![Снимок экрана от 2023-10-09 16-40-22](https://github.com/Marakya/mlops_3/assets/113238801/73200500-69f6-458b-965d-011315604011)
+
+
+Создан конвейер данных, который последовательно преобразует сырые данные. Сначала исходный файл выглядел так:
+
+
+
+Затем мы оставили в нем только отдельные нужные нам признаки
+
+![2023-10-09 (4)](https://github.com/Marakya/mlops_3/assets/113238801/dbbbe70a-5a9b-4eb3-8bd6-b9ea784a638b)
+
+Признак -  содержит пропуски, заполним их средними значениями.
+
+![2023-10-09 (5)](https://github.com/Marakya/mlops_3/assets/113238801/a87de661-2b7d-4bdf-bb80-30feaec95084)
+
+Строковые значения признака-  мы заменили числовыми значениями.
+
+![2023-10-09 (6)](https://github.com/Marakya/mlops_3/assets/113238801/2bf54d1f-f350-4e8a-a311-dd212387a95f)
+
+
+
+
+
