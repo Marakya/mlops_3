@@ -80,7 +80,7 @@ https://www.kaggle.com/datasets/reenapinto/housing-price-and-real-estate-2023
 
 ![Снимок экрана от 2023-10-09 19-17-34](https://github.com/Marakya/mlops_3/assets/113238801/f2adfbd4-6d28-40a0-8ed8-312f19a0cc00)
 
-![Снимок экрана от 2023-10-09 19-28-39](https://github.com/Marakya/mlops_3/assets/113238801/e4532097-290f-4336-99b4-68b545ab2bab)
+![Снимок экрана от 2023-10-09 19-28-39](https://github.com/Marakya/mlops_3/assets/113238801/405118d9-cf4e-4810-80bf-86633c4c91fe)
 
 
 
