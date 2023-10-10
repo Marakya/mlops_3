@@ -21,7 +21,7 @@
 ![Снимок экрана от 2023-10-08 16-14-19](https://github.com/Marakya/mlops_3/assets/113238801/54567f82-c71d-4e73-9ad0-dd9e5ac0876f)
 
 
-Данные взяты с kaggle - [Housing Price & Real Estate - 2023](#https://www.kaggle.com/datasets/reenapinto/housing-price-and-real-estate-2023)
+Данные взяты с kaggle - [Housing Price & Real Estate - 2023](https://www.kaggle.com/datasets/reenapinto/housing-price-and-real-estate-2023)
 
 
 Написаны три скрипта для обработки данных:
