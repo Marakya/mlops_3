@@ -42,10 +42,9 @@ https://www.kaggle.com/datasets/reenapinto/housing-price-and-real-estate-2023
 
 ![Снимок экрана от 2023-10-09 16-40-22](https://github.com/Marakya/mlops_3/assets/113238801/73200500-69f6-458b-965d-011315604011)
 
-
 Создан конвейер данных, который последовательно преобразует сырые данные. Сначала исходный файл выглядел так:
 
-
+![image](https://github.com/Marakya/mlops_3/assets/113238801/6f0e1835-899d-4c16-adff-512371c7964e)
 
 Затем мы оставили в нем только отдельные нужные нам признаки
 
@@ -55,9 +54,29 @@ https://www.kaggle.com/datasets/reenapinto/housing-price-and-real-estate-2023
 
 ![2023-10-09 (5)](https://github.com/Marakya/mlops_3/assets/113238801/a87de661-2b7d-4bdf-bb80-30feaec95084)
 
-Строковые значения признака-  мы заменили числовыми значениями.
+Строковые значения признака-  заменены числовыми значениями.
 
 ![2023-10-09 (6)](https://github.com/Marakya/mlops_3/assets/113238801/2bf54d1f-f350-4e8a-a311-dd212387a95f)
+
+В результате добавления в конвейер stage - train_test_split получаем два набора - train, test
+
+![image](https://github.com/Marakya/mlops_3/assets/113238801/766d79ca-afc1-4b93-9ee7-5bb7568553ce)
+
+![image](https://github.com/Marakya/mlops_3/assets/113238801/2b58a7ea-4783-4057-a2b1-7b8d79118f9e)
+
+Также написаны скрипты по обучению и оценке модели, в результате после сборки конвейера dvc.yaml имеет вид:
+
+![image](https://github.com/Marakya/mlops_3/assets/113238801/6d55a933-2543-4fad-87e7-7f9a85014d44)
+
+После обучения модели, она сохраняется в папке models, а результаты её работы на новых данных в папке evaluate
+
+![image](https://github.com/Marakya/mlops_3/assets/113238801/f39b2cca-49df-41b2-8921-6a5d94f1caae)
+
+Эксперементируем с гиперпараметрами
+
+![Снимок экрана от 2023-10-10 11-07-45](https://github.com/Marakya/mlops_3/assets/113238801/02acd02d-d170-4ea4-8f88-d6033cd6aff0)
+
+![Снимок экрана от 2023-10-10 11-08-30](https://github.com/Marakya/mlops_3/assets/113238801/223fcbef-b92f-4e13-b171-f1c2600546f3)
 
 
 
